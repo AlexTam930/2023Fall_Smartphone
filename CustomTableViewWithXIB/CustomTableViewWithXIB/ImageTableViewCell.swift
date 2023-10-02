@@ -9,6 +9,10 @@ import UIKit
 
 class ImageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgView: UIImageView!
+    
+    @IBOutlet weak var lblImage: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

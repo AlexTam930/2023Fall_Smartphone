@@ -6,3 +6,6 @@
 //
 
 import Foundation
+
+let apiKey = "e2f9e17b697dff93c8416e353426d5ea"
+let baseURL = "https://financialmodelingprep.com/api/v3/"

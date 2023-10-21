@@ -59,17 +59,44 @@
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Stock View Controller-->
         <scene sceneID="zyb-if-5oT">
             <objects>
-                <viewController id="UFb-Cb-szD" sceneMemberID="viewController">
+                <viewController id="UFb-Cb-szD" customClass="AddStockViewController" customModule="StockApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tid-jT-6p6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZt-2W-VzI">
+                                <rect key="frame" x="20" y="483" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Stock"/>
+                                <connections>
+                                    <action selector="addStockAction:" destination="UFb-Cb-szD" eventType="touchUpInside" id="WbI-ek-OIr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Stock Symbol" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zik-8I-uTA">
+                                <rect key="frame" x="20" y="409" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ESH-uv-M4I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zik-8I-uTA" firstAttribute="leading" secondItem="ESH-uv-M4I" secondAttribute="leading" constant="20" id="ACV-T6-kwz"/>
+                            <constraint firstItem="eZt-2W-VzI" firstAttribute="top" secondItem="Zik-8I-uTA" secondAttribute="bottom" constant="40" id="AQO-6n-HJW"/>
+                            <constraint firstItem="Zik-8I-uTA" firstAttribute="centerY" secondItem="tid-jT-6p6" secondAttribute="centerY" id="GJy-RL-h4l"/>
+                            <constraint firstItem="ESH-uv-M4I" firstAttribute="trailing" secondItem="eZt-2W-VzI" secondAttribute="trailing" constant="20" id="HPm-G6-Da7"/>
+                            <constraint firstItem="Zik-8I-uTA" firstAttribute="centerX" secondItem="tid-jT-6p6" secondAttribute="centerX" id="IxW-G5-Xy7"/>
+                            <constraint firstItem="eZt-2W-VzI" firstAttribute="leading" secondItem="ESH-uv-M4I" secondAttribute="leading" constant="20" id="bvH-1I-yCt"/>
+                            <constraint firstItem="ESH-uv-M4I" firstAttribute="trailing" secondItem="Zik-8I-uTA" secondAttribute="trailing" constant="20" id="oZ1-Xg-Pnj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e5O-U6-znA"/>
+                    <connections>
+                        <outlet property="txtStock" destination="Zik-8I-uTA" id="MsB-rg-Wff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCK-pN-uOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

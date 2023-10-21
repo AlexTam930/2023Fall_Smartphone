@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  test
+//  StockApp
 //
-//  Created by Alex on 2023/9/30.
+//  Created by Alex on 2023/10/21.
 //
 
 import UIKit
@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
-    
+
 }
 

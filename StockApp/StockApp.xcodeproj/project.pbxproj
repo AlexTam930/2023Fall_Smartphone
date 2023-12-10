@@ -16,6 +16,9 @@
 		FA6E75052AE476160012B2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6E75032AE476160012B2EE /* LaunchScreen.storyboard */; };
 		FA6E750D2AE48D6E0012B2EE /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E750C2AE48D6E0012B2EE /* AddStockViewController.swift */; };
 		FA6E75102AE493580012B2EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E750F2AE493580012B2EE /* Constants.swift */; };
+		FA8AA1BD2AEDB6130067278E /* StockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA1BC2AEDB6130067278E /* StockClass.swift */; };
+		FA8AA1C12AEDCE690067278E /* StockAppNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA1C02AEDCE690067278E /* StockAppNetworking.swift */; };
+		FA8AA1C32AEDD4C50067278E /* StockQuoteShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA1C22AEDD4C50067278E /* StockQuoteShort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FA6E75062AE476160012B2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6E750C2AE48D6E0012B2EE /* AddStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockViewController.swift; sourceTree = "<group>"; };
 		FA6E750F2AE493580012B2EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA8AA1BC2AEDB6130067278E /* StockClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockClass.swift; sourceTree = "<group>"; };
+		FA8AA1C02AEDCE690067278E /* StockAppNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAppNetworking.swift; sourceTree = "<group>"; };
+		FA8AA1C22AEDD4C50067278E /* StockQuoteShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuoteShort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 		FA6E74F72AE476140012B2EE /* StockApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA8AA1BF2AEDCC760067278E /* Controller */,
+				FA8AA1BE2AEDCC6F0067278E /* Model */,
 				FA6E750E2AE493300012B2EE /* Utils */,
 				FA6E74F82AE476140012B2EE /* AppDelegate.swift */,
 				FA6E74FA2AE476140012B2EE /* SceneDelegate.swift */,
@@ -93,6 +101,7 @@
 				FA6E75032AE476160012B2EE /* LaunchScreen.storyboard */,
 				FA6E75062AE476160012B2EE /* Info.plist */,
 				FA6E750C2AE48D6E0012B2EE /* AddStockViewController.swift */,
+				FA8AA1BC2AEDB6130067278E /* StockClass.swift */,
 			);
 			path = StockApp;
 			sourceTree = "<group>";
@@ -103,6 +112,22 @@
 				FA6E750F2AE493580012B2EE /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA8AA1BE2AEDCC6F0067278E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AA1C22AEDD4C50067278E /* StockQuoteShort.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA8AA1BF2AEDCC760067278E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AA1C02AEDCE690067278E /* StockAppNetworking.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +247,12 @@
 			files = (
 				FA6E75102AE493580012B2EE /* Constants.swift in Sources */,
 				FA6E74FD2AE476140012B2EE /* ViewController.swift in Sources */,
+				FA8AA1C32AEDD4C50067278E /* StockQuoteShort.swift in Sources */,
 				FA6E74F92AE476140012B2EE /* AppDelegate.swift in Sources */,
 				FA6E74FB2AE476140012B2EE /* SceneDelegate.swift in Sources */,
+				FA8AA1C12AEDCE690067278E /* StockAppNetworking.swift in Sources */,
 				FA6E750D2AE48D6E0012B2EE /* AddStockViewController.swift in Sources */,
+				FA8AA1BD2AEDB6130067278E /* StockClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

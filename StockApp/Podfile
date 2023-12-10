@@ -15,6 +15,9 @@ target 'StockApp' do
 
   pod 'SwiftyJSON'
 
+  pod "PromiseKit"
+  
+  pod "IQKeyboardManagerSwift"
  
 
 end
